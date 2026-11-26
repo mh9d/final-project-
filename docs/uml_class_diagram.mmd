@@ -1,0 +1,76 @@
+classDiagram
+    direction LR
+    class EnergyApp {
+        -household : Household
+        -calculator : TariffCalculator
+        -analyzer : EnergyAnalyzer
+        -running : bool
+        +run() None
+        +add_appliance() None
+        +view_appliances() None
+        +remove_appliance() None
+        +calculate_bill() None
+        +show_analysis() None
+        +what_if_simulator() None
+        +load_sample_data() None
+        +file_menu() None
+        +exit_app() None
+    }
+    class Household {
+        -owner_name : str
+        -appliances : list~Appliance~
+        +add_appliance(appliance) None
+        +remove_appliance(index) Appliance
+        +is_empty() bool
+        +total_monthly_kwh() float
+        +sorted_by_usage() list
+        +save_to_csv(filename) None
+        +load_from_csv(filename) int
+    }
+    class Appliance {
+        -name : str
+        -power_watts : float
+        -quantity : int
+        -hours_per_day : float
+        -days_per_month : int
+        +daily_kwh() float
+        +monthly_kwh() float
+        +to_csv_row() list
+        +from_csv_row(row)$ Appliance
+    }
+    class TariffCalculator {
+        -blocks : list
+        -service_tax_rate : float
+        -tax_free_kwh : float
+        +breakdown(total_kwh) list
+        +energy_charge(total_kwh) float
+        +service_tax(total_kwh) float
+        +total_bill(total_kwh) float
+    }
+    class EnergyAnalyzer {
+        -emission_factor : float
+        +carbon_kg(monthly_kwh) float
+        +trees_to_offset(monthly_kwh) float
+        +usage_rating(monthly_kwh) str
+        +tip_for(appliance_name) str
+        +what_if_reduce(appliance, hours) float
+    }
+    class EnergyGUI {
+        -household : Household
+        -calculator : TariffCalculator
+        -analyzer : EnergyAnalyzer
+        +add_appliance() None
+        +remove_selected() None
+        +show_bill() None
+        +show_analysis() None
+        +what_if() None
+        +refresh() None
+    }
+    EnergyGUI "1" *-- "1" Household : manages
+    EnergyGUI "1" *-- "1" TariffCalculator : uses
+    EnergyGUI "1" *-- "1" EnergyAnalyzer : uses
+    EnergyApp "1" *-- "1" Household : manages
+    EnergyApp "1" *-- "1" TariffCalculator : uses
+    EnergyApp "1" *-- "1" EnergyAnalyzer : uses
+    Household "1" o-- "0..*" Appliance : contains
+    EnergyAnalyzer ..> Appliance : analyses

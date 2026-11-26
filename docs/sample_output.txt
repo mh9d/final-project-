@@ -1,0 +1,248 @@
+
+================================================================
+           SDG 7 HOUSEHOLD ELECTRICITY BILL ESTIMATOR           
+================================================================
+  1. Add an appliance
+  2. View appliance list
+  3. Remove an appliance
+  4. Calculate monthly usage and bill
+  5. Energy-saving analysis
+  6. 'What-if' saving simulator
+  7. Load sample household (demo data)
+  8. Save / load appliances (CSV file)
+  0. Exit
+----------------------------------------------------------------
+Enter your choice (0-8): abc
+  [!] Please enter a whole number.
+Enter your choice (0-8): 9
+  [!] Please enter a number from 0 to 8.
+Enter your choice (0-8): 4
+
+  [!] No appliances recorded yet. Use option 1 or 7 first.
+
+Press Enter to return to the menu...
+
+================================================================
+           SDG 7 HOUSEHOLD ELECTRICITY BILL ESTIMATOR           
+================================================================
+  1. Add an appliance
+  2. View appliance list
+  3. Remove an appliance
+  4. Calculate monthly usage and bill
+  5. Energy-saving analysis
+  6. 'What-if' saving simulator
+  7. Load sample household (demo data)
+  8. Save / load appliances (CSV file)
+  0. Exit
+----------------------------------------------------------------
+Enter your choice (0-8): 7
+
+  [OK] Loaded 8 sample appliances.
+
+Press Enter to return to the menu...
+
+================================================================
+           SDG 7 HOUSEHOLD ELECTRICITY BILL ESTIMATOR           
+================================================================
+  1. Add an appliance
+  2. View appliance list
+  3. Remove an appliance
+  4. Calculate monthly usage and bill
+  5. Energy-saving analysis
+  6. 'What-if' saving simulator
+  7. Load sample household (demo data)
+  8. Save / load appliances (CSV file)
+  0. Exit
+----------------------------------------------------------------
+Enter your choice (0-8): 2
+
+================================================================
+                         APPLIANCE LIST                         
+================================================================
+
+No  Appliance             Watts  Qty  Hrs/day  Days    kWh/mo
+----------------------------------------------------------------
+1   Air Conditioner        1000    1      8.0    30     240.0
+2   Refrigerator            150    1     24.0    30     108.0
+3   LED Lights               10    8      6.0    30      14.4
+4   Ceiling Fan              70    3     10.0    30      63.0
+5   Television              100    1      5.0    30      15.0
+6   Water Heater           3000    1      0.5    30      45.0
+7   Washing Machine         500    1      1.0    12       6.0
+8   Rice Cooker             700    1      1.0    30      21.0
+----------------------------------------------------------------
+TOTAL                                                   512.4 kWh
+
+Press Enter to return to the menu...
+
+================================================================
+           SDG 7 HOUSEHOLD ELECTRICITY BILL ESTIMATOR           
+================================================================
+  1. Add an appliance
+  2. View appliance list
+  3. Remove an appliance
+  4. Calculate monthly usage and bill
+  5. Energy-saving analysis
+  6. 'What-if' saving simulator
+  7. Load sample household (demo data)
+  8. Save / load appliances (CSV file)
+  0. Exit
+----------------------------------------------------------------
+Enter your choice (0-8): 4
+
+================================================================
+                     MONTHLY USAGE AND BILL                     
+================================================================
+Total estimated usage : 512.4 kWh/month
+Average per day       : 17.08 kWh/day
+
+Tariff block               kWh   Rate (RM)   Cost (RM)
+------------------------------------------------------
+1-200 kWh                200.0       0.218       43.60
+201-300 kWh              100.0       0.334       33.40
+301-600 kWh              212.4       0.516      109.60
+------------------------------------------------------
+Energy charge                                   186.60
+Service tax (usage below limit)                   0.00
+ESTIMATED MONTHLY BILL (RM)                     186.60
+
+Projected yearly cost : RM 2,239.20
+
+Press Enter to return to the menu...
+
+================================================================
+           SDG 7 HOUSEHOLD ELECTRICITY BILL ESTIMATOR           
+================================================================
+  1. Add an appliance
+  2. View appliance list
+  3. Remove an appliance
+  4. Calculate monthly usage and bill
+  5. Energy-saving analysis
+  6. 'What-if' saving simulator
+  7. Load sample household (demo data)
+  8. Save / load appliances (CSV file)
+  0. Exit
+----------------------------------------------------------------
+Enter your choice (0-8): 5
+
+================================================================
+                     ENERGY-SAVING ANALYSIS                     
+================================================================
+Usage rating     : HIGH - Consider reducing heavy appliance use.
+CO2 emissions    : 299.8 kg/month
+Trees to offset  : 171 trees (one year of emissions)
+
+Share of usage by appliance:
+  Air Conditioner     46.8% #######################
+  Refrigerator        21.1% ##########
+  Ceiling Fan         12.3% ######
+  Water Heater         8.8% ####
+  Rice Cooker          4.1% ##
+  Television           2.9% #
+  LED Lights           2.8% #
+  Washing Machine      1.2% 
+
+Top 3 appliances and saving tips:
+  1. Air Conditioner: Set the air conditioner to 24-25 C and clean its filter monthly.
+  2. Refrigerator: Keep the fridge door closed and leave space behind it for airflow.
+  3. Ceiling Fan: Fans are efficient; use them instead of air conditioning when you can.
+
+Press Enter to return to the menu...
+
+================================================================
+           SDG 7 HOUSEHOLD ELECTRICITY BILL ESTIMATOR           
+================================================================
+  1. Add an appliance
+  2. View appliance list
+  3. Remove an appliance
+  4. Calculate monthly usage and bill
+  5. Energy-saving analysis
+  6. 'What-if' saving simulator
+  7. Load sample household (demo data)
+  8. Save / load appliances (CSV file)
+  0. Exit
+----------------------------------------------------------------
+Enter your choice (0-8): 6
+
+================================================================
+                   'WHAT-IF' SAVING SIMULATOR                   
+================================================================
+
+No  Appliance             Watts  Qty  Hrs/day  Days    kWh/mo
+----------------------------------------------------------------
+1   Air Conditioner        1000    1      8.0    30     240.0
+2   Refrigerator            150    1     24.0    30     108.0
+3   LED Lights               10    8      6.0    30      14.4
+4   Ceiling Fan              70    3     10.0    30      63.0
+5   Television              100    1      5.0    30      15.0
+6   Water Heater           3000    1      0.5    30      45.0
+7   Washing Machine         500    1      1.0    12       6.0
+8   Rice Cooker             700    1      1.0    30      21.0
+----------------------------------------------------------------
+TOTAL                                                   512.4 kWh
+Choose an appliance (1-8): 1
+Reduce use by how many hours/day (max 8): 3
+
+                       Current   After change
+Usage (kWh)              512.4          422.4
+Bill (RM)               186.60         140.16
+
+You would save 90.0 kWh and RM 46.44 per month
+(RM 557.28 per year) and avoid 52.6 kg of CO2 each month.
+
+Press Enter to return to the menu...
+
+================================================================
+           SDG 7 HOUSEHOLD ELECTRICITY BILL ESTIMATOR           
+================================================================
+  1. Add an appliance
+  2. View appliance list
+  3. Remove an appliance
+  4. Calculate monthly usage and bill
+  5. Energy-saving analysis
+  6. 'What-if' saving simulator
+  7. Load sample household (demo data)
+  8. Save / load appliances (CSV file)
+  0. Exit
+----------------------------------------------------------------
+Enter your choice (0-8): 1
+
+================================================================
+                        ADD AN APPLIANCE                        
+================================================================
+Appliance name: 
+  [!] This field cannot be empty. Please try again.
+Appliance name: Iron
+Power rating (watts, e.g. 1000): lots
+  [!] Please enter a number (e.g. 1500 or 2.5).
+Power rating (watts, e.g. 1000): -5
+  [!] Value must be at least 1.
+Power rating (watts, e.g. 1000): 1000
+Quantity: 1
+Average hours used per day (0-24): 30
+  [!] Value must not exceed 24.
+Average hours used per day (0-24): 0.5
+Days used per month (1-31): 8
+
+  [OK] Added: Iron (1 x 1000 W, 0.5 h/day, 8 days)
+       Uses about 4.0 kWh per month.
+
+Add another appliance? (y/n): n
+
+================================================================
+           SDG 7 HOUSEHOLD ELECTRICITY BILL ESTIMATOR           
+================================================================
+  1. Add an appliance
+  2. View appliance list
+  3. Remove an appliance
+  4. Calculate monthly usage and bill
+  5. Energy-saving analysis
+  6. 'What-if' saving simulator
+  7. Load sample household (demo data)
+  8. Save / load appliances (CSV file)
+  0. Exit
+----------------------------------------------------------------
+Enter your choice (0-8): 0
+Are you sure you want to exit? (y/n): y
+
+Thank you for saving energy! Every kWh counts for SDG 7. Goodbye.
